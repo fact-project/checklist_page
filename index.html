@@ -1,4 +1,4 @@
-<!DOCTYPE HTML> 
+<!DOCTYPE HTML>
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="checkstyle.css" />
@@ -6,9 +6,9 @@
 .error {color: #FF0000;}
 </style>
 </head>
-<body> 
+<body>
 
-<?php 
+<?php
 
 $Uname = "";
 $Passwd = "";
@@ -23,9 +23,6 @@ if(empty($_POST["Passwd"]))
 else
 { $passwd = test_input($_POST["Passwd"]);}
 
-//$uname = test_input($_POST["Uname"]);
-//$passwd = test_input($_POST["Passwd"]);
-
 function test_input($data)
 {
   $data = trim($data);
@@ -35,28 +32,19 @@ function test_input($data)
 }
 ?>
 
-
 <h1>FACT Shutdown Checklist</h1>
-<!--<p><span class="error">* required field.</span></p>-->
 <hr/>
 
 <br> If the IR camera is needed turn it on now.
 <br> Don't forget to turn it off.
 <br>
 
-<!--<form method="post" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>"  enctype="multipart/form-data" >-->
 <form method="post" action="checklist.php"  enctype="multipart/form-data" >
-
-
    <p>
       User Name:    <input type='text' name='Uname' maxlength="50" /> <br>
       Password:     <input type='password' name='Passwd' maxlength="50" /> <br>
    </p>
-
    <input type='submit' name='formpSubmit' value='Submit' />
-
 </form>
-
 </body>
 </html>
-
