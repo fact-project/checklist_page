@@ -1,8 +1,10 @@
 <?php require_once("get_status_functions.php"); ?>
 
-<form method="post" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>"  enctype="multipart/form-data" >
+<form method="post" action="doit.php"  enctype="multipart/form-data" >
       <input type='hidden' name='Obsname' maxlength="50" value="<?php echo $_POST['Uname']; ?>" />
       <input type='hidden' name='Obsmail' maxlength="50" value="<?php echo getEmail(); ?>" />
+      <input type='hidden' name='Uname' maxlength="50" value="<?php echo $_POST['Uname']; ?>" />
+      <input type='hidden' name='Passwd' maxlength="50" value="<?php echo $_POST['Passwd']; ?>" />
 
       <style>
           table, td {
