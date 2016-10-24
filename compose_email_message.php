@@ -12,7 +12,7 @@ function is_ticked($name){
 };
 
 function compose_email_message() {
-    $message = $_POST['Obsname'] . "has completed a shutdown form:\n\n";
+    $message = $_POST['Obsname'] . " has completed a shutdown form:\n\n";
     $message .= "Telescope Parked:\t\t" . is_ticked("parked") . "\n";
     $message .= "Bias Disconnected:\t\t" . is_ticked("bias_off") . "\n";
     $message .= "Lid Closed:\t\t\t" . is_ticked("lid_closed") . "\n";
