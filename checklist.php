@@ -26,7 +26,7 @@ Images not updated? Try refreshing the page a couple of times?<br>
         if (!is_email_good()) {
             echo "<br> One of the above is wrong or you have entered the ";
             echo "wrong username/password\r\n";
-            echo "Click <a href='http://fact-project.org/Checklist/'>here</a> ";
+            echo "Click <a href='index.html'>here</a> ";
             echo "to go back.\r\n";
             exit("");
         } else {
@@ -49,14 +49,12 @@ Images not updated? Try refreshing the page a couple of times?<br>
                     echo "Invalid input";
                 } else {
                     $subject = "FACT Shutdown ". date("Y-m-d");
-                    /*
                     mail(
                         "fact-online@lists.phys.ethz.ch",
                         $subject,
                         wordwrap($message, 70),
                         "From: $from\n"
                     );
-                    */
                     mail(
                         $_POST["Email"],
                         $subject,
