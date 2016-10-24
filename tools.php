@@ -75,7 +75,7 @@ function is_email_good(){
         $errorFlag = false;
     }
 
-
+    return $errorFlag;
 };
 
 ?>
