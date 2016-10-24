@@ -7,9 +7,6 @@
 Images not updated? Try refreshing the page a couple of times?<br>
 
 <?php
-
-var_dump($_POST);
-echo "<hr>";
     require_once("login.php");
     if (!(login() == "")) {
         exit("username or password not found.");
