@@ -52,9 +52,30 @@ function load_cam_image($url){
     // load an image of a webcam using curl apparently.
     // I have no idea where it is stored.
     $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_exec($ch);
     curl_close($ch);
 };
 
+function is_email_good(){
+    $errorFlag = true;
+
+    if( empty($_POST["Email"]) ) {
+        echo "Checker emailing required!<br>";
+        $errorFlag = false;
+    }
+
+    if ( !is_email_address($_POST["Email"]) ) {
+        echo "Invalid email format!<br>";
+        $errorFlag = false;
+    }
+
+    if ( $_POST["Email"] == "fact-online@lists.phys.ethz.ch" ) {
+        echo "Do not use fact-online as the backup.<br>";
+        $errorFlag = false;
+    }
+
+
+};
 
 ?>
