@@ -48,14 +48,12 @@
 	    echo "Invalid input";
 	} else {
 	    $subject = "FACT Shutdown ". date("Y-m-d");
-/*
 	    mail(
 		"fact-online@lists.phys.ethz.ch",
 		$subject,
 		wordwrap($message, 70),
 		"From: $from\n"
 	    );
-*/
 	    mail(
 		$_POST["Email"],
 		$subject,
