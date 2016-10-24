@@ -7,7 +7,7 @@
         // Try and connect to the database, if a connection has not been established yet
         if(!isset($connection)) {
              // Load configuration as an array. Use the actual location of your configuration file
-            $config = parse_ini_file('../config.ini');
+            $config = parse_ini_file('/home/dneise/sandbox_db_config.ini');
             $connection = mysqli_connect('localhost',$config['username'],$config['password'],$config['dbname']);
         }
 
@@ -36,7 +36,7 @@
 
     function db_create_table(){
         $result = db_query("
-            CREATE TABLE park_checklist_filled (
+            CREATE TABLE IF NOT EXISTS park_checklist_filled (
                 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
                 username VARCHAR(100),
                 created TIMESTAMP DEFAULT NOW()
