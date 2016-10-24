@@ -7,58 +7,30 @@
 Images not updated? Try refreshing the page a couple of times?<br>
 
 <?php
-    
-//$image_path = "/home/factwww/Checklist/images/".date("Y")."/".date("m")."/";
-//if( !is_dir($image_path) ) {
-//    mkdir($image_path, 0777, true);
-//}
-
-ini_set('display_errors', 'On');
-error_reporting(E_ALL);
-echo "var dump POST: <br>";   
-var_dump($_POST);
-echo "<br> <hr>";   
-?>
-
-<?php
+    $image_path = "/home/factwww/Checklist/images/".date("Y")."/".date("m")."/";
+    if( !is_dir($image_path) ) {
+        mkdir($image_path, 0777, true);
+    }
     require_once("login.php");
     require_once("tools.php");
     require_once("compose_email_message.php");
     require_once("getEmail.php");
-
-    if (!login() == ""){
-        echo "you are not logged in: go to <a href=\"index.html\" >login page</a> <br>";
-    };
+    require_once("db.php");
+    db_create_table(); // creates the table if it does not exist;
 
     if ( login() == "" && !isset($_POST["formSubmit"])) {
         load_lidcam_image();
         load_IR_image();
         require("form.php");
     } else {
-         $errorFlag = false;
-
-        if( empty($_POST["Email"]) ) {
-            echo "Checker emailing required!<br>";
-            $errorFlag = true;
-        }
-
-        if ( !is_email_address($_POST["Email"]) ) {
-            echo "Invalid email format!<br>";
-            $errorFlag = true;
-        }
-
-        if ( $_POST["Email"] == "fact-online@lists.phys.ethz.ch" ) {
-            echo "Do not use fact-online as the backup.<br>";
-            $errorFlag = true;
-        }
-
-        if ($errorFlag) {
+        if (!is_email_good()) {
             echo "<br> One of the above is wrong or you have entered the ";
             echo "wrong username/password\r\n";
             echo "Click <a href='http://fact-project.org/Checklist/'>here</a> ";
             echo "to go back.\r\n";
             exit("");
         } else {
+            db_user_filled_checklist($_POST['Obsname']);
 
             $message = compose_email_message();
             echo "<br>";
