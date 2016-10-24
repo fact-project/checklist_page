@@ -8,30 +8,6 @@
 </head>
 <body>
 
-<?php
-
-$Uname = "";
-$Passwd = "";
-
-if(empty($_POST["Uname"]))
-{ $unameErr = "Username required"; }
-else
-{ $uname = test_input($_POST["Uname"]);}
-
-if(empty($_POST["Passwd"]))
-{ $Err = "Password required"; }
-else
-{ $passwd = test_input($_POST["Passwd"]);}
-
-function test_input($data)
-{
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
-
 <h1>FACT Shutdown Checklist</h1>
 <hr/>
 
