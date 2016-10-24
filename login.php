@@ -10,11 +10,11 @@ function login()
 
     if( isset($_POST['Uname']) )
     {
-      $username = $_POST['Uname'];
+        $username = $_POST['Uname'];
     }
     if( isset($_POST['Passwd']) )
     {
-      $password = $_POST['Passwd'];
+        $password = $_POST['Passwd'];
     }
 
     $con = @ldap_connect($ldaphost);
@@ -58,7 +58,6 @@ function login()
 
     @ldap_unbind($con);
 
-    $found = false;
     foreach ($srData[0]['member'] as $member)
         if (strpos($member, "cn=".$userCommonName.",")===0)
             return "";
