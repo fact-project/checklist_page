@@ -28,7 +28,7 @@
         echo "to go back.\r\n";
         exit("");
     }
-    
+
     db_user_filled_checklist($_POST['Obsname']);
 
     $message = compose_email_message();
@@ -44,30 +44,30 @@
     $from = $_POST['Obsmail'];
 
     if (isset($from)) {
-	if (!is_email_address_2($from)) {
-	    echo "Invalid input";
-	} else {
-	    $subject = "FACT Shutdown ". date("Y-m-d");
-	    mail(
-		"fact-online@lists.phys.ethz.ch",
-		$subject,
-		wordwrap($message, 70),
-		"From: $from\n"
-	    );
-	    mail(
-		$_POST["Email"],
-		$subject,
-		wordwrap($message2, 70),
-		"From: $from\n"
-	    );
-	    echo "<br>";
-	    echo "Thank you";
-	    echo "<br>";
-	}
+      if (!is_valid_email_address(sanitize_email_address($from))) {
+          echo "Invalid input";
+      } else {
+          $subject = "FACT Shutdown ". date("Y-m-d");
+          mail(
+        "fact-online@lists.phys.ethz.ch",
+        $subject,
+        wordwrap($message, 70),
+        "From: $from\n"
+          );
+          mail(
+        $_POST["Email"],
+        $subject,
+        wordwrap($message2, 70),
+        "From: $from\n"
+          );
+          echo "<br>";
+          echo "Thank you";
+          echo "<br>";
+      }
     } else {
-	echo "<br>";
-	echo "Mail not sent!!";
-	echo "<br>";
+      echo "<br>";
+      echo "Mail not sent!!";
+      echo "<br>";
     }
 ?>
 
