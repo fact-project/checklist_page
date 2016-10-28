@@ -28,8 +28,7 @@ function sanitize_email_address($supposed_email_address) {
 function is_valid_email_address($email){
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         return true;
-    }
-    if (filter_var($email_b, FILTER_VALIDATE_EMAIL)) {
+    } else {
         return false;
     }
 };
