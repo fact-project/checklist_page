@@ -19,6 +19,7 @@
           <td><img src="../cam/snap2.jpg" width="320" height="250" alt="cam picture" /></td>
           <td> <input type="checkbox" name="ticked_checks[]" value="parked"> </td>
         </tr>
+
         <tr>
           <td>Camera Looks okay?</td>
           <td>
@@ -28,6 +29,23 @@
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="lid_closed"> </td>
         </tr>
+
+        <tr>
+          <td>Ist the schedule filled?</td>
+          <td>
+          <a href="https://www.fact-project.org/schedule/">Observation Scheduler</a>
+          </td>
+          <td> <input type="checkbox" name="ticked_checks[]" value="schedule_filled"> </td>
+        </tr>
+
+        <tr>
+          <td>Are there Swift observations?</td>
+          <a href="http://fact-project.org/dch/scheduling.php">scheduling.php</a>
+          <td>
+          </td>
+          <td> <input type="checkbox" name="ticked_checks[]" value="swift"> </td>
+        </tr>
+
       </table>
 
    <h3> Submission: </h3> <?php echo submitter(); ?>
