@@ -44,6 +44,17 @@
         ");
     };
 
+    function db_create_startup_table(){
+        $result = db_query("
+            CREATE TABLE IF NOT EXISTS startup_checklist_filled (
+                id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+                username VARCHAR(100),
+                created TIMESTAMP DEFAULT NOW()
+            );
+        ");
+    };
+
+
     function db_quote($value) {
         $connection = db_connect();
         return "'" . mysqli_real_escape_string($connection,$value) . "'";
@@ -52,6 +63,11 @@
     function db_user_filled_checklist($username){
         db_query("INSERT INTO `park_checklist_filled` (`username`) VALUES (" . db_quote($username) . ")");
     };
+
+    function db_user_filled_startup_checklist($username){
+        db_query("INSERT INTO `startup_checklist_filled` (`username`) VALUES (" . db_quote($username) . ")");
+    };
+
 
 ?>
 
