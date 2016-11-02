@@ -11,26 +11,30 @@ function test_input($data)
   return $data;
 }
 
-function is_email_address_2($supposed_email_address) {
-    // Sanitize e-mail address
-    $supposed_email_address=filter_var($supposed_email_address, FILTER_SANITIZE_EMAIL);
-    // Validate e-mail address
-    if(filter_var($supposed_email_address, FILTER_VALIDATE_EMAIL)) {
-        return TRUE;
-    } else {
-        return FALSE;
-    }
+
+/*
+See the php manual for the filter_var functions. They are pretty nice.
+http://php.net/manual/de/book.filter.php
+
+And some examples
+http://php.net/manual/de/filter.examples.validation.php
+
+*/
+function sanitize_email_address($supposed_email_address) {
+    return filter_var($supposed_email_address, FILTER_SANITIZE_EMAIL);
 }
 
 
-function is_email_address($email){
-    if ( preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email) ){
+function is_valid_email_address($email){
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         return true;
     } else {
         return false;
     }
-
 };
+
+
+
 
 function submitter(){
     return $_POST["Uname"] . ": IP: " . $_SERVER['REMOTE_ADDR'] . " Time: " . date("Y-m-d H:i:s") . "<br>";
@@ -65,7 +69,7 @@ function is_email_good(){
         $errorFlag = false;
     }
 
-    if ( !is_email_address($_POST["Email"]) ) {
+    if ( !is_valid_email_address($_POST["Email"]) ) {
         echo "Invalid email format!<br>";
         $errorFlag = false;
     }
