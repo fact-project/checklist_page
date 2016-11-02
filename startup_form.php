@@ -46,6 +46,20 @@
           <td> <input type="checkbox" name="ticked_checks[]" value="swift"> </td>
         </tr>
 
+        <tr>
+          <td>
+            Do the FACT++ programs run
+            <br>
+            (green or yellow on this page)?
+            <br>
+            Are there at least 1.5TB diskspace? (last two rows)
+          </td>
+          <a href="https://fact-project.org/smartfact/index.html?#status">smartfact</a>
+          <td>
+          </td>
+          <td> <input type="checkbox" name="ticked_checks[]" value="servers_online"> </td>
+        </tr>
+
       </table>
 
    <h3> Submission: </h3> <?php echo submitter(); ?>
