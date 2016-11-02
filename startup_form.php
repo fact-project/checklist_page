@@ -54,8 +54,8 @@
             <br>
             Are there at least 1.5TB diskspace? (last two rows)
           </td>
-          <a href="https://fact-project.org/smartfact/index.html?#status">smartfact</a>
           <td>
+            <a href="https://fact-project.org/smartfact/index.html?#status">smartfact</a>
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="servers_online"> </td>
         </tr>
