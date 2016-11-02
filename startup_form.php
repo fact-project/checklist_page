@@ -40,8 +40,8 @@
 
         <tr>
           <td>Are there Swift observations?</td>
-          <a href="http://fact-project.org/dch/scheduling.php">scheduling.php</a>
           <td>
+          <a href="http://fact-project.org/dch/scheduling.php">scheduling.php</a>
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="swift"> </td>
         </tr>
