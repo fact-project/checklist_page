@@ -33,7 +33,7 @@
         <tr>
           <td>Ist the schedule filled?</td>
           <td>
-          <a href="https://www.fact-project.org/schedule/">Observation Scheduler</a>
+          <a target="_blank" href="https://www.fact-project.org/schedule/">Observation Scheduler</a>
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="schedule_filled"> </td>
         </tr>
@@ -41,7 +41,7 @@
         <tr>
           <td>Are there Swift observations?</td>
           <td>
-          <a href="http://fact-project.org/dch/scheduling.php">scheduling.php</a>
+          <a target="_blank" href="http://fact-project.org/dch/scheduling.php">scheduling.php</a>
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="swift"> </td>
         </tr>
@@ -55,7 +55,7 @@
             Are there at least 1.5TB diskspace? (last two rows)
           </td>
           <td>
-            <a href="https://fact-project.org/smartfact/index.html?#status">smartfact</a>
+            <a target="_blank" href="https://fact-project.org/smartfact/index.html?#status">smartfact</a>
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="servers_online"> </td>
         </tr>
