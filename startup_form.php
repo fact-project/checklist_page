@@ -31,6 +31,15 @@
         </tr>
 
         <tr>
+          <td>Dummy Alert worked?</td>
+          <td>
+          <a target="_blank" href="https://ihp-pc41.ethz.ch/">shifthelper webinterface</a>
+          </td>
+          <td> <input type="checkbox" name="ticked_checks[]" value="dummy_alert"> </td>
+        </tr>
+
+
+        <tr>
           <td>Ist the schedule filled?</td>
           <td>
           <a target="_blank" href="https://www.fact-project.org/schedule/">Observation Scheduler</a>
