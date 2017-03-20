@@ -16,7 +16,7 @@
       <table style="width:600">
         <tr>
           <td>No tourists?</td>
-          <td><img src="../cam/snap2.jpg" width="320" height="250" alt="cam picture" /></td>
+          <td><img src="../cam/ircam_with_date.jpg" width="320" height="250" alt="cam picture" /></td>
           <td> <input type="checkbox" name="ticked_checks[]" value="parked"> </td>
         </tr>
 
@@ -29,6 +29,15 @@
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="lid_closed"> </td>
         </tr>
+
+        <tr>
+          <td>Dummy Alert worked?</td>
+          <td>
+          <a target="_blank" href="https://ihp-pc41.ethz.ch/">shifthelper webinterface</a>
+          </td>
+          <td> <input type="checkbox" name="ticked_checks[]" value="dummy_alert"> </td>
+        </tr>
+
 
         <tr>
           <td>Ist the schedule filled?</td>
