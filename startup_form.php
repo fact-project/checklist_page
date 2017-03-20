@@ -23,7 +23,7 @@
         <tr>
           <td>Camera Looks okay?</td>
           <td>
-            <img src="../cam/lidcam2.jpg" width="320" height="250" alt="lid picture" />
+            <img src="../cam/lidcam_with_date.jpg" width="320" alt="lid picture" />
             <br>
             <?php echo lid_status(); ?>
           </td>
