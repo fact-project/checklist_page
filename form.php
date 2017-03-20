@@ -16,7 +16,7 @@
       <table style="width:600">
         <tr>
           <td>Telescope Parked?</td>
-          <td><img src="../cam/snap2.jpg" width="320" height="250" alt="cam picture" /></td>
+          <td><img src="../cam/ircam_with_date.jpg" width="320" alt="cam picture" /></td>
           <td> <input type="checkbox" name="ticked_checks[]" value="parked"> </td>
         </tr>
         <tr>
@@ -37,7 +37,7 @@
         <tr>
           <td>Camera Lid Closed</td>
           <td>
-            <img src="../cam/lidcam2.jpg" width="320" height="250" alt="lid picture" />
+            <img src="../cam/lidcam_with_date.jpg" width="320" alt="lid picture" />
             <br>
             <?php echo lid_status(); ?>
           </td>

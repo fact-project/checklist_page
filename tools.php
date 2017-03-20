@@ -43,13 +43,13 @@ function submitter(){
 function load_lidcam_image(){
     load_cam_image("http://www.fact-project.org/cam/lidcam.php");
     $backup_path = "/home/factwww/Checklist/images/".date("Y")."/".date("m")."/FocalPlane_".date("Y-m-d_H:i:s").".jpg";
-    copy("../cam/lidcam2.jpg", $backup_path);
+    copy("../cam/lidcam_with_date.jpg", $backup_path);
 };
 
 function load_IR_image(){
     load_cam_image("http://www.fact-project.org/cam/cam.php");
     $backup_path = "/home/factwww/Checklist/images/".date("Y")."/".date("m")."/IRcam_".date("Y-m-d_H:i:s").".jpg";
-    copy("../cam/snap2.jpg", $backup_path);
+    copy("../cam/ircam_with_date.jpg", $backup_path);
 };
 
 function load_cam_image($url){
