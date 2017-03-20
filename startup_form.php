@@ -16,7 +16,7 @@
       <table style="width:600">
         <tr>
           <td>No tourists?</td>
-          <td><img src="../cam/ircam_with_date.jpg" width="320" height="250" alt="cam picture" /></td>
+          <td><img src="../cam/ircam_with_date.jpg" width="320" alt="cam picture" /></td>
           <td> <input type="checkbox" name="ticked_checks[]" value="parked"> </td>
         </tr>
 
