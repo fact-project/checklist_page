@@ -15,9 +15,17 @@
 
       <table style="width:600">
         <tr>
-          <td>No tourists?</td>
+          <td>Check</td>
+          <td>Status</td>
+          <td> Checked? </td>
+          <td> Reaction </td>
+        </tr>
+        <tr>
+
+          <td>No people inside fence?</td>
           <td><img src="../cam/ircam_with_date.jpg" width="320" alt="cam picture" /></td>
           <td> <input type="checkbox" name="ticked_checks[]" value="parked"> </td>
+          <td> If FACT/MAGIC members, try to contact them. If tourists, call MAGIC shiftleader.</td>
         </tr>
 
         <tr>
@@ -28,6 +36,7 @@
             <?php echo lid_status(); ?>
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="lid_closed"> </td>
+          <td> Call Expert </td>
         </tr>
 
         <tr>
@@ -36,6 +45,7 @@
           <a target="_blank" href="https://ihp-pc41.ethz.ch/">shifthelper webinterface</a>
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="dummy_alert"> </td>
+          <td> Call SH developers: mnoethe or dneise.</td>
         </tr>
 
 
@@ -45,6 +55,7 @@
           <a target="_blank" href="https://www.fact-project.org/schedule/">Observation Scheduler</a>
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="schedule_filled"> </td>
+          <td> Fill it, in doubt ask ddorner.</td>
         </tr>
 
         <tr>
@@ -53,6 +64,7 @@
           <a target="_blank" href="http://fact-project.org/dch/scheduling.php">scheduling.php</a>
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="swift"> </td>
+          <td> Fill them in the schedule, in doubt ask ddorner. </td>
         </tr>
 
         <tr>
@@ -67,6 +79,8 @@
             <a target="_blank" href="https://fact-project.org/smartfact/index.html?#status">smartfact</a>
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="servers_online"> </td>
+
+          <td> Call expert. </td>
         </tr>
 
       </table>
