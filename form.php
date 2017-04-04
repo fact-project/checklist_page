@@ -68,8 +68,8 @@
         <tr>
           <td>TPoint Camera Off?</td>
           <td> check if TPoint cam is Off on <a href="http://10.0.100.230/ov.html">This power switch - port 2</a>. </td>
-          <td> If not Off, switch it off. If the page does not load - make sure you use VPN. if still not and you did not switch it on during the night; just report via email. If you think it might be on, because you used it, call expert.</td>
           <td> <input type="checkbox" name="ticked_checks[]" value="tpoint_off"> </td>
+          <td> If not Off, switch it off. If the page does not load - make sure you use VPN. if still not and you did not switch it on during the night; just report via email. If you think it might be on, because you used it, call expert.</td>
         </tr>
       </table>
 
