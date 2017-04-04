@@ -26,11 +26,11 @@
           <td><img src="../cam/ircam_with_date.jpg" width="320" alt="cam picture" /></td>
           <td> <input type="checkbox" name="ticked_checks[]" value="parked"> </td>
           <td>
-          <ul>
-            <li> Switch Drive On again </li>
-            <li> <a href="http://fact-project.org/smartfact/index.html?sound#control-drive">The "park telescope" button</a> </li>
-            <li> Switch Drive Off again </li>
-          </ul>
+            <ul>
+              <li> Switch Drive On again </li>
+              <li> <a href="http://fact-project.org/smartfact/index.html?sound#control-drive">The "park telescope" button</a> </li>
+              <li> Switch Drive Off again </li>
+            </ul>
           </td>
           <td> Call expert! --> Call MAGIC shift leader!</td>
         </tr>
@@ -38,11 +38,13 @@
           <td>Drive Locked?</td>
           <td><?php echo drive_status(); ?></td>
           <td> <input type="checkbox" name="ticked_checks[]" value="is_locked"> </td>
-          <ul>
-            <li> Switch Drive On again </li>
-            <li> <a href="http://fact-project.org/smartfact/index.html?sound#control-drive">The "park telescope" button</a> </li>
-            <li> Switch Drive Off again </li>
-          </ul>
+          <td>
+            <ul>
+              <li> Switch Drive On again </li>
+              <li> <a href="http://fact-project.org/smartfact/index.html?sound#control-drive">The "park telescope" button</a> </li>
+              <li> Switch Drive Off again </li>
+            </ul>
+          </td>
           <td> Call expert </td>
         </tr>
         <tr>
