@@ -57,7 +57,7 @@
 
 
         <tr>
-          <td>Ist the schedule filled?</td>
+          <td>Is the schedule filled?</td>
           <td>
           <a target="_blank" href="https://www.fact-project.org/schedule/">Observation Scheduler</a>
           </td>
