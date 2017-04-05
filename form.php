@@ -30,6 +30,8 @@
               <li> Switch Drive On again </li>
               <li> <a href="http://fact-project.org/smartfact/index.html?sound#control-drive">The "park telescope" button</a> </li>
               <li> Switch Drive Off again </li>
+              <li> see also <a href="https://trac.fact-project.org/wiki/TroubleShootingDrivectrl%20"> 
+                    Trouble Shooting Drive </a> </li>
             </ul>
           </td>
           <td> Call expert! --> Call MAGIC shift leader!</td>
@@ -43,6 +45,8 @@
               <li> Switch Drive On again </li>
               <li> <a href="http://fact-project.org/smartfact/index.html?sound#control-drive">The "park telescope" button</a> </li>
               <li> Switch Drive Off again </li>
+              <li> see also <a href="https://trac.fact-project.org/wiki/TroubleShootingDrivectrl%20"> 
+                    Trouble Shooting Drive </a> </li>                 
             </ul>
           </td>
           <td> Call expert </td>
