@@ -29,8 +29,7 @@
         </tr>
             
         <tr>
-
-          <td>Mirrors fallen off or loose?</td>
+         <td>Mirrors fallen off or loose? <br> Ice on structure?</td>
           <td><img src="../cam/ircam_with_date.jpg" width="320" alt="cam picture" /></td>
           <td> <input type="checkbox" name="ticked_checks[]" value="mirrors_good"> </td>
           <td> ask MAGIC to have a look; if MAGICs can clear the situation: observe; else: don't observe.</td>
