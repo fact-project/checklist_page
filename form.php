@@ -81,7 +81,7 @@
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="lid_closed"> </td>
           <td> "Close lid" on <a href="http://fact-project.org/smartfact/index.html?sound#control-lid">smartfact</a> </td>
-          <td> call expert </td>
+          <td> if stormy: call expert (something might damage window); else just an email to fact-online. </td>
         </tr>
         <tr>
           <td>Drive Off ?</td>
