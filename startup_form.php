@@ -33,7 +33,7 @@
         <tr>
           <td>Are there any ORM alerts?</td>
           <td>
-            <a href="http://www.iac.es/eno.php?op1=2&op2=5&op3=58&lang=en">
+            <a href="http://www.iac.es/eno.php?op1=2&op2=5&op3=58&lang=en" target="_blank">
               ORM status report
             </a>
           </td>
