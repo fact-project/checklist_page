@@ -33,7 +33,7 @@
         <tr>
           <td>Dummy Alert worked?</td>
           <td>
-          <a target="_blank" href="https://ihp-pc41.ethz.ch/">shifthelper webinterface</a>
+          <a target="_blank" href="https://shifthelper.app.tu-dortmund.de">shifthelper webinterface</a>
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="dummy_alert"> </td>
         </tr>
