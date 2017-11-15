@@ -20,14 +20,21 @@
           <td> Checked? </td>
           <td> Reaction </td>
         </tr>
-        <tr>
 
+        <tr>
+          <td> Read the emails of the last 2 days that came over `fact-online@lists.phys.ethz.ch`</td>
+          <td> </td>
+          <td> <input type="checkbox" name="ticked_checks[]" value="all_emails_read"> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
           <td>No people inside fence?</td>
           <td><img src="../cam/ircam_with_date.jpg" width="320" alt="cam picture" /></td>
           <td> <input type="checkbox" name="ticked_checks[]" value="parked"> </td>
           <td> If FACT/MAGIC members, try to contact them. If tourists, call MAGIC shiftleader.</td>
         </tr>
-            
+
         <tr>
          <td>Mirrors fallen off or loose? <br> Ice on structure?</td>
           <td><img src="../cam/ircam_with_date.jpg" width="320" alt="cam picture" /></td>
@@ -98,6 +105,41 @@
           <td> <input type="checkbox" name="ticked_checks[]" value="servers_online"> </td>
 
           <td> Call expert. </td>
+        </tr>
+
+        <tr>
+          <td> Make a logbook entry for the night.</td>
+          <td> </td>
+          <td> <input type="checkbox" name="ticked_checks[]" value="has_prepared_logbook_entry"> </td>
+          <td> <a href="https://www.fact-project.org/logbook/calendar.php?action=addevent&calendar=1" target="_blank">make a new entry for tonight</a>></td>
+        </tr>
+
+        <tr>
+          <td> Switch the drive on</td>
+          <td> <?php echo drive_power(); ?> </td>
+          <td> <input type="checkbox" name="ticked_checks[]" value="has_drive_switched_on"> </td>
+          <td> <a href="http://fact-project.org/smartfact/index.html?sound#dodrivetoggle" target="_blank">toggle drive</a>></td>
+        </tr>
+
+        <tr>
+          <td> Unlock the drive </td>
+          <td> <?php echo drive_status(); ?> </td>
+          <td> <input type="checkbox" name="ticked_checks[]" value="has_drive_unlocked"> </td>
+          <td> <a href="http://fact-project.org/smartfact/index.html?sound#dodriveunlock" target="_blank">unlock drive</a>></td>
+        </tr>
+
+        <tr>
+          <td> Start Data Taking </td>
+          <td> <?php echo dim_server_status(); ?> </td>
+          <td> <input type="checkbox" name="ticked_checks[]" value="has_started_data_taking"> </td>
+          <td> <a href="http://fact-project.org/smartfact/index.html?sound#control-main" target="_blank">Start Data Taking</a>></td>
+        </tr>
+
+        <tr>
+          <td> Enter a summary about the startup into the logbook entry </td>
+          <td> </td>
+          <td> <input type="checkbox" name="ticked_checks[]" value="has_made_startup_summary"> </td>
+          <td> </td>
         </tr>
 
       </table>
