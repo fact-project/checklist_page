@@ -30,6 +30,8 @@
               <li> Switch Drive On again </li>
               <li> <a href="http://fact-project.org/smartfact/index.html?sound#control-drive">The "park telescope" button</a> </li>
               <li> Switch Drive Off again </li>
+              <li> see also <a href="https://trac.fact-project.org/wiki/TroubleShootingDrivectrl%20"> 
+                    Trouble Shooting Drive </a> </li>
             </ul>
           </td>
           <td> Call expert! --> Call MAGIC shift leader!</td>
@@ -43,6 +45,8 @@
               <li> Switch Drive On again </li>
               <li> <a href="http://fact-project.org/smartfact/index.html?sound#control-drive">The "park telescope" button</a> </li>
               <li> Switch Drive Off again </li>
+              <li> see also <a href="https://trac.fact-project.org/wiki/TroubleShootingDrivectrl%20"> 
+                    Trouble Shooting Drive </a> </li>                 
             </ul>
           </td>
           <td> Call expert </td>
@@ -77,7 +81,7 @@
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="lid_closed"> </td>
           <td> "Close lid" on <a href="http://fact-project.org/smartfact/index.html?sound#control-lid">smartfact</a> </td>
-          <td> call expert </td>
+          <td> if stormy: call expert (something might damage window); else just an email to fact-online. </td>
         </tr>
         <tr>
           <td>Drive Off ?</td>

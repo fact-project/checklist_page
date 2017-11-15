@@ -27,6 +27,13 @@
           <td> <input type="checkbox" name="ticked_checks[]" value="parked"> </td>
           <td> If FACT/MAGIC members, try to contact them. If tourists, call MAGIC shiftleader.</td>
         </tr>
+            
+        <tr>
+         <td>Mirrors fallen off or loose? <br> Ice on structure?</td>
+          <td><img src="../cam/ircam_with_date.jpg" width="320" alt="cam picture" /></td>
+          <td> <input type="checkbox" name="ticked_checks[]" value="mirrors_good"> </td>
+          <td> ask MAGIC to have a look; if MAGICs can clear the situation: observe; else: don't observe.</td>
+        </tr>
 
         <tr>
           <td>Camera Looks okay?</td>
@@ -50,7 +57,7 @@
 
 
         <tr>
-          <td>Ist the schedule filled?</td>
+          <td>Is the schedule filled?</td>
           <td>
           <a target="_blank" href="https://www.fact-project.org/schedule/">Observation Scheduler</a>
           </td>
