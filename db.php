@@ -44,7 +44,7 @@
         ");
     };
 
-    function db_create_startup_table(){
+    function db_create_startup_table_if_not_exists(){
         $result = db_query("
             CREATE TABLE IF NOT EXISTS startup_checklist_filled (
                 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,

@@ -47,9 +47,19 @@
         </tr>
 
         <tr>
+          <td>Are there any ORM alerts?</td>
+          <td>
+            <a href="http://www.iac.es/eno.php?op1=2&op2=5&op3=58&lang=en" target="_blank">
+              ORM status report
+            </a>
+          </td>
+          <td> <input type="checkbox" name="ticked_checks[]" value="orm_alerts"> </td>
+        </tr>
+
+        <tr>
           <td>Dummy Alert worked?</td>
           <td>
-          <a target="_blank" href="https://ihp-pc41.ethz.ch/">shifthelper webinterface</a>
+          <a target="_blank" href="https://shifthelper.app.tu-dortmund.de">shifthelper webinterface</a>
           </td>
           <td> <input type="checkbox" name="ticked_checks[]" value="dummy_alert"> </td>
           <td> Call SH developers: mnoethe or dneise.</td>
