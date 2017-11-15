@@ -11,7 +11,7 @@
     }
     require_once("tools.php");
     require_once("db.php");
-    db_create_startup_table(); // creates the table if it does not exist;
+    db_create_startup_table_if_not_exists();
     db_user_filled_startup_checklist($_POST['Obsname']);
 ?>
 
