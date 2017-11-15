@@ -87,8 +87,8 @@
           <td> call expert </td>
         </tr>
         <tr>
-          <td>TPoint Camera Off?</td>
-          <td> check if TPoint cam is Off on <a href="http://10.0.100.230/ov.html">This power switch - port 2</a>. </td>
+          <td>Switch TPoint Camera Off</td>
+          <td> <a href="http://10.0.100.230/ov.html">On Gude Power Switch 10.0.100.230</a></td>
           <td> <input type="checkbox" name="ticked_checks[]" value="tpoint_off"> </td>
           <td> switch it off - VPN needed.</td>
           <td> call expert </td>
