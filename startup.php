@@ -1,10 +1,15 @@
 <!DOCTYPE HTML>
 <html>
-<?php require("head.html") ?>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<title>Startup Checklist</title>
 
 <body>
-<h1>FACT Startup Checklist</h1>
-Images not updated? Try refreshing the page a couple of times?<br>
+<div class="w3-container">
+
+<h2>Accordions</h2>
+<p>An accordion is used to show (and hide) HTML content:</p>
 
 <?php
     require_once("login.php");
@@ -28,5 +33,22 @@ Images not updated? Try refreshing the page a couple of times?<br>
 ?>
 </body>
 </html>
-</body>
-</html>
+
+</div>
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+
+
+
+
