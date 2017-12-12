@@ -34,7 +34,7 @@
         return mysqli_error($connection);
     }
 
-    function db_create_table(){
+    function db_create_shutdown_table_if_not_exists(){
         $result = db_query("
             CREATE TABLE IF NOT EXISTS park_checklist_filled (
                 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
