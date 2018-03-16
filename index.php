@@ -18,8 +18,6 @@
         {
             $action = $_POST['startup_or_shutdown'];
         }
-        load_lidcam_image();
-        load_IR_image();
         ir_cam_leds_on();
 
         switch ($action) {

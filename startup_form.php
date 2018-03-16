@@ -1,5 +1,5 @@
-<img src="../cam/ircam_with_date.jpg" width="320" alt="cam picture" />
-<img src="../cam/lidcam_with_date.jpg" width="320" alt="lid picture" />
+<img src="/cam/cam.php?t=<?php echo time() ?>"  width="320" alt="cam picture" />
+<img src="/cam/lidcam.php?t=<?php echo time() ?>" width="320" alt="lid picture" />
 
 <form method="post" action="doit.php"  enctype="multipart/form-data" >
       <input type='hidden' name='Uname' value="<?php echo $_POST['Uname']; ?>" />

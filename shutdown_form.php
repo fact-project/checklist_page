@@ -1,5 +1,5 @@
-<img src="../cam/ircam_with_date.jpg" width="320" alt="cam picture" />
-<img src="../cam/lidcam_with_date.jpg" width="320" alt="lid picture" />
+<img src="/cam/cam.php?t=<?php echo time() ?>"  width="320" alt="cam picture" />
+<img src="/cam/lidcam.php?t=<?php echo time() ?>" width="320" alt="lid picture" />
 <img src="http://fact-project.org/tpoint_cam/_now.png.png" width="320" alt="tpoint_cam" />
 
 
