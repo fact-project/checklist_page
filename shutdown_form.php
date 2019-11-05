@@ -56,7 +56,7 @@
           <td>
               Drive Off? --- drive power: <?php echo drive_power(); ?>
             <button onclick="document.getElementById('drive_off_help').style.display='block'" class="w3-button" type="button">
-          ???</button></td>
+          ?help?</button></td>
           <td><input type="checkbox" name="ticked_checks[]" value="drive_off"></td>
         </tr>
         <tr>

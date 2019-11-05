@@ -13,7 +13,7 @@
             Read the news
             <button onclick="document.getElementById('read_email_help').style.display='block'"
               class="w3-button" type="button">
-              &#x1F6C8;
+              ?help?
             </button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="all_emails_read"></td>
@@ -22,7 +22,7 @@
         <tr>
           <td>
             Check Site free <button onclick="document.getElementById('check_site_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="parked"></td>
         </tr>
@@ -31,7 +31,7 @@
           <td>
               Mirrors fine?
             <button onclick="document.getElementById('mirrors_good_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="mirrors_good"></td>
         </tr>
@@ -47,7 +47,7 @@
           <td>
               Check ORM alerts
             <button onclick="document.getElementById('orm_alerts_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="orm_alerts"></td>
         </tr>
@@ -56,7 +56,7 @@
           <td>
             Check SH Dummy Alert
             <button onclick="document.getElementById('dummy_alert_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="dummy_alert"></td>
         </tr>
@@ -65,7 +65,7 @@
           <td>
             Check Observation Schedule
             <button onclick="document.getElementById('schedule_filled_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="schedule_filled"></td>
         </tr>
@@ -74,7 +74,7 @@
           <td>
             Check FACT++ programs
             <button onclick="document.getElementById('servers_online_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="servers_online"></td>
         </tr>
@@ -83,7 +83,7 @@
           <td>
             Make a logbook entry for the night.
             <button onclick="document.getElementById('has_prepared_logbook_entry_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="has_prepared_logbook_entry"></td>
         </tr>
@@ -92,7 +92,7 @@
           <td>
               Switch on and unlock the drive
             <button onclick="document.getElementById('has_drive_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="has_drive"></td>
         </tr>
@@ -101,7 +101,7 @@
           <td>
             Start Data Taking: <?php echo dim_server_status(); ?>
             <button onclick="document.getElementById('has_started_data_taking_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="has_started_data_taking"></td>
         </tr>

@@ -5,7 +5,7 @@
     require_once("login.php");
     require_once("tools.php");
     require_once("db.php");
-    ir_cam_leds_off();
+    switch_ir_off();
 
     if (login() == "") {
         $action = "";
