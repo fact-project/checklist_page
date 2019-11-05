@@ -8,7 +8,7 @@ function drive_power() { return get_status(20); };
 function dim_server_status() { return get_status(2); };
 
 function get_status($position){
-    $file = fopen("/home/fact/FACT++/www/smartfact/data/status.data", "r") or exit("Unable to open file!");
+    $file = fopen("/home/fact/operation/www/smartfact/data/status.data", "r") or exit("Unable to open file!");
     for ($x=0; $x<=$position; $x++) {
         $temp=fgets($file);
     }
@@ -17,7 +17,7 @@ function get_status($position){
 };
 
 function median_voltage(){
-    $file = fopen("/home/fact/FACT++/www/smartfact/data/voltage.data", "r") or exit("Unable to open file!");
+    $file = fopen("/home/fact/operation/www/smartfact/data/voltage.data", "r") or exit("Unable to open file!");
     for ($x=0; $x<=2; $x++) {
         $temp=fgets($file);
     }
