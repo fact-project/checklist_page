@@ -18,7 +18,7 @@
         {
             $action = $_POST['startup_or_shutdown'];
         }
-        ir_cam_leds_on();
+        // ir_cam_leds_on();
 
         switch ($action) {
         case "startup":

@@ -1,5 +1,6 @@
 <img src="/cam/cam.php?t=<?php echo time() ?>"  width="320" alt="cam picture" />
 <img src="/cam/lidcam.php?t=<?php echo time() ?>" width="320" alt="lid picture" />
+<img src="http://fact-project.org/tpoint_cam/_now.png.png" width="320" alt="tpoint_cam" />
 
 <form method="post" action="doit.php"  enctype="multipart/form-data" >
       <input type='hidden' name='Uname' value="<?php echo $_POST['Uname']; ?>" />
@@ -38,8 +39,6 @@
         <tr>
           <td>
               Check camera Lid: <?php echo lid_status(); ?>
-            <button onclick="document.getElementById('lid_closed_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="lid_closed"></td>
         </tr>
@@ -119,9 +118,9 @@
     <div class="w3-container">
       <span onclick="document.getElementById('read_email_help').style.display='none'"
       class="w3-button w3-display-topright">&times;</span>
-      Read the emails of the last 2 days that came over `fact-online@lists.phys.ethz.ch`
+      Read the emails of the last 7 days that came over `fact-online@lists.phys.ethz.ch`
       <br>
-      and read the read the
+      and read the 
       <a href="https://www.fact-project.org/logbook/forumdisplay.php?fid=5" target="_blank">
               shift forum
       </a>.
@@ -163,7 +162,7 @@
               ORM status report
             </a>
             <br>
-            QUESTION: Under what conditions should shifters not even start???
+            Ask an Expert in case you are unsure if operation is safe.
     </div>
   </div>
 </div>
@@ -189,17 +188,16 @@
       class="w3-button w3-display-topright">&times;</span>
             Check the
             <a target="_blank" href="https://www.fact-project.org/schedule/">Observation Scheduler</a> <br>
-            If not filled, fill it. <br>
+            If not filled, fill it using the <a target="_blank" href="https://fact-project.org/dch/scheduling.php">visibility page</a>
             <br>
             Are there Swift observations? Check the
             <a target="_blank" href="http://fact-project.org/dch/scheduling.php">scheduling.php</a> <br>
 
-            If there are Swift Observations: Fill them into schedule.
+            If there are Swift Observations: Check the 
+            <a target="_blank" href="https://trac.fact-project.org/wiki/Protected/Observations#MWLObservationswithSwift">Observations wiki page</a>, 
+            if your need to adapt the schedule
             <br>
             If in doubt, ask Daniela Dorner how to do it.
-            <br>
-            QUESTION: If we want to fill swift observations always into our schedule, why
-            don't we do it automatically???
     </div>
   </div>
 </div>
@@ -215,7 +213,7 @@
             website<br>
             Make sure all servers green or yellow on the status page. <br>
             Are there at least 1.5TB diskspace? (last two rows)
-            If not, Call expert.
+            If not, call an expert.
     </div>
   </div>
 </div>

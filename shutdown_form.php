@@ -14,63 +14,63 @@
           <td>
             Telescope Parked? --- drive status: <?php echo drive_status(); ?>
             <button onclick="document.getElementById('parked_help').style.display='block'" class="w3-button" type="button">
-            &#x1F6C8;</button></td>
+            ?help?</button></td>
           <td><input type="checkbox" name="ticked_checks[]" value="parked"></td>
         </tr>
         <tr>
           <td>
               Drive Locked? --- drive status: <?php echo drive_status(); ?>
             <button onclick="document.getElementById('is_locked_help').style.display='block'" class="w3-button" type="button">
-          &#x1F6C8;</button></td>
+          ?help?</button></td>
           <td><input type="checkbox" name="ticked_checks[]" value="is_locked"></td>
         </tr>
         <tr>
           <td>
               Bias VoltageOff --- median voltage: <?php echo median_voltage(); ?> V
             <button onclick="document.getElementById('is_bias_VoltageOff_help').style.display='block'" class="w3-button" type="button">
-          &#x1F6C8;</button></td>
+          ?help?</button></td>
           <td><input type="checkbox" name="ticked_checks[]" value="is_bias_VoltageOff"></td>
         </tr>
         <tr>
           <td>
               Bias Disconnected --- bias status: <?php echo bias_status(); ?>
             <button onclick="document.getElementById('bias_off_help').style.display='block'" class="w3-button" type="button">
-          &#x1F6C8;</button></td>
+          ?help?</button></td>
           <td><input type="checkbox" name="ticked_checks[]" value="bias_off"></td>
         </tr>
         <tr>
           <td>
               Trigger Valid --- trigger status: <?php echo trigger_status(); ?>
             <button onclick="document.getElementById('trigger_off_help').style.display='block'" class="w3-button" type="button">
-          &#x1F6C8;</button></td>
+          ?help?</button></td>
           <td><input type="checkbox" name="ticked_checks[]" value="trigger_off"></td>
         </tr>
         <tr>
           <td>
               Camera Lid Closed --- lid status: <?php echo lid_status(); ?>
             <button onclick="document.getElementById('lid_closed_help').style.display='block'" class="w3-button" type="button">
-          &#x1F6C8;</button></td>
+          ?help?</button></td>
           <td><input type="checkbox" name="ticked_checks[]" value="lid_closed"></td>
         </tr>
         <tr>
           <td>
               Drive Off? --- drive power: <?php echo drive_power(); ?>
             <button onclick="document.getElementById('drive_off_help').style.display='block'" class="w3-button" type="button">
-          &#x1F6C8;</button></td>
+          ???</button></td>
           <td><input type="checkbox" name="ticked_checks[]" value="drive_off"></td>
         </tr>
         <tr>
           <td>
               Is TPoint Camera Off?
             <button onclick="document.getElementById('tpoint_off_help').style.display='block'" class="w3-button" type="button">
-          &#x1F6C8;</button></td>
+          ?help?</button></td>
           <td><input type="checkbox" name="ticked_checks[]" value="tpoint_off"></td>
         </tr>
         <tr>
           <td>
               Main.js Off?
             <button onclick="document.getElementById('mainjs_off_help').style.display='block'" class="w3-button" type="button">
-          &#x1F6C8;</button></td>
+          ?help?</button></td>
           <td><input type="checkbox" name="ticked_checks[]" value="mainjs_off"></td>
         </tr>
 
