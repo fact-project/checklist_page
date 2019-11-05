@@ -9,7 +9,8 @@
 <h1>FACT Checklists</h1>
 <?php
     require_once("login.php");
-    require_once("tools.php");
+    require_once("/home/factwww/sandbox/mnoethe/shift/ircam.php");
+    require_once("/home/factwww/sandbox/mnoethe/shift/tools.php");
     require_once("db.php");
 
     if (login() == "") {
@@ -18,9 +19,7 @@
         {
             $action = $_POST['startup_or_shutdown'];
         }
-        load_lidcam_image();
-        load_IR_image();
-        ir_cam_leds_on();
+        switch_ir_on();
 
         switch ($action) {
         case "startup":

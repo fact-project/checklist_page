@@ -1,5 +1,6 @@
-<img src="../cam/ircam_with_date.jpg" width="320" alt="cam picture" />
-<img src="../cam/lidcam_with_date.jpg" width="320" alt="lid picture" />
+<img src="/cam/cam.php?t=<?php echo time() ?>"  width="320" alt="cam picture" />
+<img src="/cam/lidcam.php?t=<?php echo time() ?>" width="320" alt="lid picture" />
+<img src="http://fact-project.org/tpoint_cam/_now.png.png" width="320" alt="tpoint_cam" />
 
 <form method="post" action="doit.php"  enctype="multipart/form-data" >
       <input type='hidden' name='Uname' value="<?php echo $_POST['Uname']; ?>" />
@@ -12,7 +13,7 @@
             Read the news
             <button onclick="document.getElementById('read_email_help').style.display='block'"
               class="w3-button" type="button">
-              &#x1F6C8;
+              ?help?
             </button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="all_emails_read"></td>
@@ -21,7 +22,7 @@
         <tr>
           <td>
             Check Site free <button onclick="document.getElementById('check_site_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="parked"></td>
         </tr>
@@ -30,7 +31,7 @@
           <td>
               Mirrors fine?
             <button onclick="document.getElementById('mirrors_good_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="mirrors_good"></td>
         </tr>
@@ -38,8 +39,6 @@
         <tr>
           <td>
               Check camera Lid: <?php echo lid_status(); ?>
-            <button onclick="document.getElementById('lid_closed_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="lid_closed"></td>
         </tr>
@@ -48,7 +47,7 @@
           <td>
               Check ORM alerts
             <button onclick="document.getElementById('orm_alerts_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="orm_alerts"></td>
         </tr>
@@ -57,7 +56,7 @@
           <td>
             Check SH Dummy Alert
             <button onclick="document.getElementById('dummy_alert_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="dummy_alert"></td>
         </tr>
@@ -66,7 +65,7 @@
           <td>
             Check Observation Schedule
             <button onclick="document.getElementById('schedule_filled_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="schedule_filled"></td>
         </tr>
@@ -75,7 +74,7 @@
           <td>
             Check FACT++ programs
             <button onclick="document.getElementById('servers_online_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="servers_online"></td>
         </tr>
@@ -84,7 +83,7 @@
           <td>
             Make a logbook entry for the night.
             <button onclick="document.getElementById('has_prepared_logbook_entry_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="has_prepared_logbook_entry"></td>
         </tr>
@@ -93,7 +92,7 @@
           <td>
               Switch on and unlock the drive
             <button onclick="document.getElementById('has_drive_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="has_drive"></td>
         </tr>
@@ -102,7 +101,7 @@
           <td>
             Start Data Taking: <?php echo dim_server_status(); ?>
             <button onclick="document.getElementById('has_started_data_taking_help').style.display='block'"
-              class="w3-button" type="button">&#x1F6C8;</button>
+              class="w3-button" type="button">?help?</button>
           </td>
           <td><input type="checkbox" name="ticked_checks[]" value="has_started_data_taking"></td>
         </tr>
@@ -119,9 +118,9 @@
     <div class="w3-container">
       <span onclick="document.getElementById('read_email_help').style.display='none'"
       class="w3-button w3-display-topright">&times;</span>
-      Read the emails of the last 2 days that came over `fact-online@lists.phys.ethz.ch`
+      Read the emails of the last 7 days that came over `fact-online@lists.phys.ethz.ch`
       <br>
-      and read the read the
+      and read the 
       <a href="https://www.fact-project.org/logbook/forumdisplay.php?fid=5" target="_blank">
               shift forum
       </a>.
@@ -163,7 +162,7 @@
               ORM status report
             </a>
             <br>
-            QUESTION: Under what conditions should shifters not even start???
+            Ask an Expert in case you are unsure if operation is safe.
     </div>
   </div>
 </div>
@@ -189,17 +188,16 @@
       class="w3-button w3-display-topright">&times;</span>
             Check the
             <a target="_blank" href="https://www.fact-project.org/schedule/">Observation Scheduler</a> <br>
-            If not filled, fill it. <br>
+            If not filled, fill it using the <a target="_blank" href="https://fact-project.org/dch/scheduling.php">visibility page</a>
             <br>
             Are there Swift observations? Check the
             <a target="_blank" href="http://fact-project.org/dch/scheduling.php">scheduling.php</a> <br>
 
-            If there are Swift Observations: Fill them into schedule.
+            If there are Swift Observations: Check the 
+            <a target="_blank" href="https://trac.fact-project.org/wiki/Protected/Observations#MWLObservationswithSwift">Observations wiki page</a>, 
+            if your need to adapt the schedule
             <br>
             If in doubt, ask Daniela Dorner how to do it.
-            <br>
-            QUESTION: If we want to fill swift observations always into our schedule, why
-            don't we do it automatically???
     </div>
   </div>
 </div>
@@ -215,7 +213,7 @@
             website<br>
             Make sure all servers green or yellow on the status page. <br>
             Are there at least 1.5TB diskspace? (last two rows)
-            If not, Call expert.
+            If not, call an expert.
     </div>
   </div>
 </div>

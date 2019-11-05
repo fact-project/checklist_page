@@ -3,12 +3,12 @@
 function drive_status() { return get_status(5); };
 function bias_status() { return get_status(9); };
 function trigger_status() { return get_status(8); };
-function lid_status() { return get_status(20); };
-function drive_power() { return get_status(19); };
+function lid_status() { return get_status(21); };
+function drive_power() { return get_status(20); };
 function dim_server_status() { return get_status(2); };
 
 function get_status($position){
-    $file = fopen("/home/fact/FACT++/www/smartfact/data/status.data", "r") or exit("Unable to open file!");
+    $file = fopen("/home/factwww/smartfact/data/status.data", "r") or exit("Unable to open file!");
     for ($x=0; $x<=$position; $x++) {
         $temp=fgets($file);
     }
@@ -17,31 +17,12 @@ function get_status($position){
 };
 
 function median_voltage(){
-    $file = fopen("/home/fact/FACT++/www/smartfact/data/voltage.data", "r") or exit("Unable to open file!");
+    $file = fopen("/home/factwww/smartfact/data/voltage.data", "r") or exit("Unable to open file!");
     for ($x=0; $x<=2; $x++) {
         $temp=fgets($file);
     }
     fclose($file);
     return explode("\t", $temp)[1];
-};
-
-function load_lidcam_image(){
-    load_cam_image("http://www.fact-project.org/cam/lidcam.php");
-    // --> writes the file to "../cam/lidcam_with_date.jpg"
-};
-
-function load_IR_image(){
-    load_cam_image("http://www.fact-project.org/cam/cam.php");
-    // --> writes the file to "../cam/ircam_with_date.jpg"
-};
-
-function load_cam_image($url){
-    // load an image of a webcam using curl apparently.
-    // I have no idea where it is stored.
-    $ch = curl_init($url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_exec($ch);
-    curl_close($ch);
 };
 
 function ir_cam_send_data($url, $data = null, $method = "get") {
